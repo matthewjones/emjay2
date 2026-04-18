@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>404</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://matthewjones.github.io/emjay2/assets/css/holiday.css?cc=1776487444423">
+  <link rel="stylesheet" href="https://matthewjones.github.io/emjay2/assets/css/custom.css?cc=1776487444423">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <style>
+        body {
+            background-image: url('https://matthewjones.github.io/emjay2/assets/img/bg.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+        nav {
+            background: transparent;
+        }
+        .overlay {
+            z-index: -1;
+            position: fixed; top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--background-color);
+            opacity: 0.75;
+        }
+    </style>
+ </head>
+ <body>
+  <div class="overlay"></div>
+  <header>
+   <h1><a href="https://matthewjones.github.io/emjay2">eMJay²</a></h1>
+  </header>
+  <!-- <nav>
+      <ul>
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        <li>
+          <span>Menu</span>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav> -->
+  <main>
+   <h1>404: Page Not Found</h1>
+   <p>Sorry, the page you were looking for doesn’t exist.</p>
+   <p><a href="https://matthewjones.github.io/emjay2">Go back to the homepage</a></p>
+  </main>
+  <footer>Copyright 2002-26 | All Rights Reserved | Matthew Jones</footer>
+  <!-- dark-mode-toggle -->
+  <dark-mode-toggle permanent style="position: absolute; top: 0; border: 0; left: 1rem"></dark-mode-toggle>
+  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  <script>
+    const toggle = document.querySelector("dark-mode-toggle");
+
+    // Set or remove the mode classes the first time:
+    if (toggle.mode === "dark") {
+    document.documentElement.classList.add("holiday-css-dark");
+    } else if (toggle.mode === "light") {
+    document.documentElement.classList.add("holiday-css-light");
+    }
+
+    // Listen for toggle changes (which includes `prefers-color-scheme`
+    // changes) and toggle the `dark` class accordingly:
+    toggle.addEventListener("colorschemechange", () => {
+    document.documentElement.classList.toggle(
+        "holiday-css-dark",
+        toggle.mode === "dark",
+    );
+    document.documentElement.classList.toggle(
+        "holiday-css-light",
+        toggle.mode === "light",
+    );
+    });
+</script>
+ </body>
+</html>

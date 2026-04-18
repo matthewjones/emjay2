@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>eMJay2</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://matthewjones.github.io/emjay2/assets/css/holiday.css?cc=1776487444423">
+  <link rel="stylesheet" href="https://matthewjones.github.io/emjay2/assets/css/custom.css?cc=1776487444423">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <style>
+        body {
+            background-image: url('https://matthewjones.github.io/emjay2/assets/img/bg.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+        nav {
+            background: transparent;
+        }
+        .overlay {
+            z-index: -1;
+            position: fixed; top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--background-color);
+            opacity: 0.75;
+        }
+    </style>
+ </head>
+ <body>
+  <div class="overlay"></div>
+  <header>
+   <h1><a href="https://matthewjones.github.io/emjay2">eMJay²</a></h1>
+  </header>
+  <!-- <nav>
+      <ul>
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        <li>
+          <span>Menu</span>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav> -->
+  <main>
+   <div style="text-align: center;">
+    <img src="https://matthewjones.github.io/emjay2/assets/img/matt_vintage_comic.png" width="200" alt="" class="image-style">
+   </div>
+   <!-- <p>Torment me no longer! I have seen the Grail! Oh, anyway, on to scene twenty-four, which is a smashing scene with some lovely acting, in which Arthur discovers a vital clue, in which there aren't any swallows, although I think you can hear a starling -oolp! It's not a question of where he grips it! It's a simple question of weight ratios! A five ounce bird could not carry a 1 pound coconut. Herbert. We live in a bloody swamp. We need all the land we can get. If... she.. weighs the same as a duck, she's made of wood. What is your quest? No, no -- 'nee'. You're not doing it properly. I do. [zoosh] You seek the Holy Grail! No, no, no, oooooooh, in surprise and alarm. Dennis, there's some lovely filth down here. Oh -- how d'you do?</p> -->
+   <style>
+    img.image-style {
+        /* Add radius (rounded corners) */
+        border-radius: 50%; /* Adjust the value for more or less rounding */
+
+        /* Add shadow */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Horizontal offset, Vertical offset, Blur radius, Color */
+    }
+</style>
+  </main>
+  <footer>Copyright 2002-26 | All Rights Reserved | Matthew Jones</footer>
+  <!-- dark-mode-toggle -->
+  <dark-mode-toggle permanent style="position: absolute; top: 0; border: 0; left: 1rem"></dark-mode-toggle>
+  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  <script>
+    const toggle = document.querySelector("dark-mode-toggle");
+
+    // Set or remove the mode classes the first time:
+    if (toggle.mode === "dark") {
+    document.documentElement.classList.add("holiday-css-dark");
+    } else if (toggle.mode === "light") {
+    document.documentElement.classList.add("holiday-css-light");
+    }
+
+    // Listen for toggle changes (which includes `prefers-color-scheme`
+    // changes) and toggle the `dark` class accordingly:
+    toggle.addEventListener("colorschemechange", () => {
+    document.documentElement.classList.toggle(
+        "holiday-css-dark",
+        toggle.mode === "dark",
+    );
+    document.documentElement.classList.toggle(
+        "holiday-css-light",
+        toggle.mode === "light",
+    );
+    });
+</script>
+ </body>
+</html>
